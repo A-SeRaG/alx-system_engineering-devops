@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#displays bad luck for the 4th loop iteration
+#displays good luck for the 8th loop iteration
+#displays Best School for the other iterations
+
+C=0
+
+while [ $C -lt 10 ]
+do
+	if [ $C -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $C -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+done
+
