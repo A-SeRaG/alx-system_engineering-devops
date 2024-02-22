@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Bash script that displays Best School 10 times using until
+
+C=0
+
+until [ $C -eq 10 ]
+do
+	echo "Best School"
+	((C++))
+done
+
