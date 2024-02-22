@@ -3,7 +3,7 @@
 
 C=0
 
-while [$C -lt 10 ]
+while [ $C -lt 10 ]
 do
 	if [ $C -eq 9 ]
 	then
