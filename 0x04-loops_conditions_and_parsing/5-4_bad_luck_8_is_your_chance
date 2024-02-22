@@ -7,13 +7,15 @@ C=0
 
 while [ $C -lt 10 ]
 do
-	if [ $C -eq 4 ]
+	if [ $C -eq 3 ]
 	then
 		echo "bad luck"
-	elif [ $C -eq 8 ]
+	elif [ $C -eq 7 ]
 	then
 		echo "good luck"
 	else
 		echo "Best School"
+	fi
+	((C++))
 done
 
