@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 # Gather data from an API
 
-from sys import argv
-import request
 import re
+import requests
+import sys
 
 REST_API = "https://jsonplaceholder.typicode.com/"
 
 if __name__ == '__main__':
-    if len(argv) > 1:
-        if re.fullmatch(r'\d+', argv[1]):
-            id = int(argv[1])
+    if len(sys.argv) > 1:
+        if re.fullmatch(r'\d+', sys.argv[1]):
+            id = int(sys.argv[1])
             req = requests.get('{}/users/{}'.format(REST_API, id)).json()
             task_req = requests.get('{}/todos'.format(REST_API)).json()
             emp_name = req.get('name')
