@@ -1,6 +1,8 @@
+#!/usr/bin/python3
 """Script that returns the number of subscribers"""
 
 import request
+
 
 def number_of_subscribers(subreddit):
     """returns the number of subscribers"""
